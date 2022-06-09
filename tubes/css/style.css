@@ -1,0 +1,329 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* LOADER */
+
+
+/* INDEX PHP */
+
+
+/* Judul */
+
+.container-fluid .row .info {
+    margin: 10px;
+}
+
+.container-fluid .row .info p {
+    display: inline-block;
+}
+
+.container-fluid .row .logout {
+    text-align: right;
+    margin: 10px;
+}
+
+.container-fluid .row .logout a {
+    color: silver;
+    transition: 0.5s;
+}
+
+.container-fluid .row .logout a:hover {
+    color: red;
+    transition: 0.5s;
+}
+
+.container-fluid .row .logo {
+    margin: 20px auto 40px auto;
+}
+
+.container-fluid .navbar .container-fluid section .fas.fa-print {
+    color: #303958;
+}
+
+.container-fluid .navbar .container-fluid section .fas.fa-print:hover {
+    color: #151e3d;
+}
+
+.container-fluid .navbar .container-fluid section .fas.fa-cart-plus {
+    color: #2d3655;
+}
+
+.container-fluid .navbar .container-fluid section .fas.fa-cart-plus:hover {
+    color: #151e3d;
+}
+
+#page {
+    text-align: center;
+}
+
+#page a {
+    color: #151e3d;
+    ;
+    text-decoration: none;
+}
+
+@media (max-width:770px) {
+    .container-fluid {
+        width: fit-content;
+    }
+    .container-fluid .logo {
+        margin: 10px 0;
+    }
+    .container-fluid .logo h1 {
+        margin-left: 10px;
+        margin-bottom: 50px;
+        text-align: left;
+        font-size: 50px;
+    }
+    .container-fluid .logo h6 {
+        display: none;
+    }
+    .container-fluid .navbar.navbar-light .container-fluid {
+        width: 100%;
+    }
+}
+
+
+/* TAMBAH & UBAH */
+
+@media(max-width:499px) {
+    .logo {
+        margin: 30px auto 0 auto;
+        width: 100%;
+        height: 100%;
+    }
+    .logo h1 {
+        margin-bottom: -2px;
+        text-align: center;
+        font-weight: 400;
+        font-family: 'Libre Bodoni', sans-serif;
+        text-transform: uppercase;
+        color: #151e3d;
+        ;
+    }
+    .logo h1 span {
+        color: red;
+    }
+    .logo .subtitle {
+        color: rgba(0, 0, 0, 0.692);
+        text-align: center;
+        font-weight: 500;
+        font-family: 'Montserrat', sans-serif;
+        text-transform: uppercase;
+        font-size: 10px;
+    }
+    .btn2 {
+        cursor: pointer;
+        margin-left: 30%;
+    }
+    .far.fa-arrow-alt-circle-left {
+        color: #c51f1a;
+        margin: 10px 10px 0 10px;
+        font-size: 20px;
+        transition: 0.5s;
+    }
+    .far.fa-arrow-alt-circle-left:hover {
+        color: red;
+        transition: 0.6s;
+    }
+}
+
+@media(min-width:500px) {
+    .container-fluid .content {
+        margin: 30px auto;
+        padding: 10px;
+        width: 50%;
+        height: 100%;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.20);
+        border-radius: 10px;
+    }
+    .logo {
+        margin: 30px auto 0 auto;
+        width: 50%;
+        height: 50%;
+    }
+    .logo h1 {
+        margin-bottom: -2px;
+        text-align: center;
+        font-weight: 400;
+        font-family: 'Libre Bodoni', sans-serif;
+        text-transform: uppercase;
+        color: #151e3d;
+        ;
+    }
+    .logo h1 span {
+        color: red;
+    }
+    .logo .subtitle {
+        color: rgba(0, 0, 0, 0.692);
+        text-align: center;
+        font-weight: 500;
+        font-family: 'Montserrat', sans-serif;
+        text-transform: uppercase;
+        font-size: 15px;
+    }
+    .btn2 {
+        cursor: pointer;
+        margin-left: 30%;
+    }
+    .far.fa-arrow-alt-circle-left {
+        color: #c51f1a;
+        margin: 10px 10px 0 10px;
+        font-size: 20px;
+        transition: 0.5s;
+    }
+    .far.fa-arrow-alt-circle-left:hover {
+        color: red;
+        transition: 0.6s;
+    }
+}
+
+
+/* DETAIL */
+
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+#myImg:hover {
+    opacity: 0.7;
+}
+
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Black w/ opacity */
+}
+
+
+/* Modal Content (image) */
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 75%;
+    max-width: 75%;
+}
+
+
+/* Caption of Modal Image */
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+
+/* Add Animation */
+
+.modal-content,
+#caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+.out {
+    animation-name: zoom-out;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {
+        -webkit-transform: scale(1)
+    }
+    to {
+        -webkit-transform: scale(2)
+    }
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0.4)
+    }
+    to {
+        transform: scale(1)
+    }
+}
+
+@keyframes zoom-out {
+    from {
+        transform: scale(1)
+    }
+    to {
+        transform: scale(0)
+    }
+}
+
+
+/* The Close Button */
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#map {
+    margin-top: 20px;
+}
+
+
+/* 100% Image Width on Smaller Screens */
+
+@media only screen and (max-width: 700px) {
+    .modal-content {
+        width: 100%;
+    }
+}
